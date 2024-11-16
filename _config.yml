@@ -7,7 +7,8 @@ url: "https://DumboDhruvi.github.io" # Replace with your domain
 twitter_username: 'your-twitter-handle'
 github_username: 'DumboDhruvi'
 linkedin_username: 'your-linkedin-handle' # Add LinkedIn if applicable
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-cayman
+
 
 # Build settings
 markdown: kramdown
