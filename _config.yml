@@ -1,0 +1,43 @@
+# Site settings
+title: "Dhruv Kumar's Portfolio"
+email: 'dhruv01112004@gmail.com' # Add your email
+description: "AI and Data Science student exploring engineering, technology, and AI"
+baseurl: "" # Leave empty if hosted at the root domain
+url: "https://DumboDhruvi.github.io" # Replace with your domain
+twitter_username: 'your-twitter-handle'
+github_username: 'DumboDhruvi'
+linkedin_username: 'your-linkedin-handle' # Add LinkedIn if applicable
+theme: minimal-mistakes-jekyll
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+
+# Pagination settings
+pagination:
+  enabled: true
+  collection: projects
+  per_page: 5
+  permalink: '/projects/page/:num/'  # Corrected: added the missing closing quote
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+
+# Phantom settings
+footer_text: '© 2024 Dhruv Kumar'
+admin_name: 'Dhruv Kumar'
+enable_contact: true
+
+# Phantom Navigation menu
+enable_nav: true
+nav_item:
+  - { url: '/', text: 'Home' }
+  - { url: '/projects', text: 'Projects' }
+  - { url: '/blog', text: 'Blog' }
+
+collections:
+  projects:
+    output: true

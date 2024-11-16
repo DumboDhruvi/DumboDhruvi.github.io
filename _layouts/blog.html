@@ -1,0 +1,33 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - {{ site.title }}</title>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center;">Blog</h1>
+    <p style="text-align: center;">Explore my latest blog posts on AI, engineering, and more!</p>
+    
+    <section>
+      <ul style="list-style: none; padding: 0;">
+        {% for post in site.posts %}
+        <li style="margin-bottom: 20px; text-align: center;">
+          <h2><a href="{{ post.url }}" style="text-decoration: none; color: #333;">{{ post.title }}</a></h2>
+          <p>{{ post.date | date: "%B %d, %Y" }} • {{ post.excerpt }}</p>
+          <a href="{{ post.url }}" style="color: #007BFF;">Read more &rarr;</a>
+        </li>
+        <hr style="width: 50%; margin: auto;">
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

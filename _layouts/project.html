@@ -1,0 +1,33 @@
+{% include header.html %}
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Project Title -->
+
+
+                
+                <h2>{{ page.title }}</h2>
+
+                <!-- Project Description -->
+                <p>{{ page.description }}</p>
+
+                <!-- Technologies Used -->
+                <h3>Technologies Used:</h3>
+                <p>{{ page.technologies | join: ", " }}</p>
+
+                <!-- Project Details -->
+                <div class="project-details">
+                    <h3>Project Details:</h3>
+                    <p>{{ page.content }}</p>
+                </div>
+
+                <!-- GitHub Link -->
+                <a href="{{ page.project_link }}" class="github-link" target="_blank" style="text-align:center">View Source Code on GitHub</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include footer.html %}
