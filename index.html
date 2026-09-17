@@ -1,7 +1,679 @@
----
-layout: home
-pagination: 
-  enabled: true
----
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhruv Kumar | AI & Data Science Engineer | Siemens</title>
+  <meta name="description" content="Portfolio of Dhruv Kumar - AI & Data Science Engineer and Graduate Trainee Engineer at Siemens. Specializing in Applied AI, Computer Vision, C#, Angular, and Python.">
+  <meta name="author" content="Dhruv Kumar">
 
-<!-- BLANK -->
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Dhruv Kumar | AI & Data Science Engineer">
+  <meta property="og:description" content="Graduate Trainee Engineer at Siemens | AI/ML Research | GATE DSAI 2025 | Explore projects and live GitHub repositories.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dumbodhruvi.github.io">
+
+  <!-- Favicon & Stylesheet -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation Bar
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="nav-brand" aria-label="Dhruv Kumar Homepage">
+        <span class="brand-dot"></span>
+        <span>Dhruv Kumar</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#featured" class="nav-link">Featured</a></li>
+          <li><a href="#github-showcase" class="nav-link">GitHub Live</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="assets/Dhruv_Kumar_Resume.pdf" target="_blank" class="nav-btn" rel="noopener noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Hero Section
+         ====================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="pulse-dot"></span>
+              <span>Graduate Trainee Engineer @ Siemens</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Dhruv Kumar</span>
+            </h1>
+
+            <p class="hero-role">
+              AI & Data Science Engineer • <span class="company">Siemens</span>
+            </p>
+
+            <p class="hero-desc">
+              Building enterprise security access-control software on the <strong>SiPass</strong> team with C#, Angular, and TypeScript. Passionate about applied machine learning, computer vision, automated evaluation pipelines, and modern agentic AI developer workflows.
+            </p>
+
+            <div class="hero-actions">
+              <a href="assets/Dhruv_Kumar_Resume.pdf" target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>View Latest Resume</span>
+              </a>
+              <a href="#github-showcase" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Explore Projects</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Get in Touch</span>
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://github.com/DumboDhruvi" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/dhruvkumar2004" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://leetcode.com/u/DumboDhruvi/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode Profile (1649 Rating)">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.797l3.76-4.026 4.908-5.262a1.388 1.388 0 0 0 .023-1.933A1.374 1.374 0 0 0 13.483 0zm-2.88 7.218a1.38 1.38 0 0 0-.979.404l-2.613 2.613a1.382 1.382 0 0 0 0 1.955 1.382 1.382 0 0 0 1.955 0l2.613-2.613a1.38 1.38 0 0 0-.976-2.359zm8.56 5.568a1.38 1.38 0 0 0-.98.404l-5.83 5.83a1.382 1.382 0 0 0 0 1.955 1.382 1.382 0 0 0 1.955 0l5.83-5.83a1.38 1.38 0 0 0-.975-2.359z"/></svg>
+              </a>
+              <a href="mailto:dhruv01112004@gmail.com" class="social-icon-btn" title="Direct Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="profile-card">
+              <div class="profile-img-container">
+                <img src="assets/profile.jpg" alt="Dhruv Kumar" class="profile-img" onerror="this.src='assets/avatar.jpg'">
+                <div class="profile-card-badge">
+                  <span class="badge-icon">📍</span>
+                  <div>
+                    <div class="badge-text-primary">Chennai, India</div>
+                    <div class="badge-text-sub">Siemens Tech & Services</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-quick-stats">
+                <div class="quick-stat-item">
+                  <div class="quick-stat-val">8.44</div>
+                  <div class="quick-stat-lbl">CGPA</div>
+                </div>
+                <div class="quick-stat-item">
+                  <div class="quick-stat-val">AIR 6259</div>
+                  <div class="quick-stat-lbl">GATE DSAI</div>
+                </div>
+                <div class="quick-stat-item">
+                  <div class="quick-stat-val">1649</div>
+                  <div class="quick-stat-lbl">LeetCode</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Key Metrics Highlights Strip
+         ====================================================================== -->
+    <section class="metrics-strip" id="about">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon-box">🎓</div>
+            <div class="metric-info">
+              <h3>B.E. AI & DS</h3>
+              <p>SPPU Pune • CGPA 8.44</p>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon-box">⚡</div>
+            <div class="metric-info">
+              <h3>GATE DSAI 2025</h3>
+              <p>Qualified • AIR 6259</p>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon-box">💻</div>
+            <div class="metric-info">
+              <h3>300+ Problems</h3>
+              <p>LeetCode Peak 1649 (Top 16%)</p>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon-box">📑</div>
+            <div class="metric-info">
+              <h3>Published Research</h3>
+              <p>CNN Plant Disease (95.26% Acc)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Work Experience Section
+         ====================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Journey</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-desc">Building enterprise software and applied AI solutions across enterprise teams and dynamic startups.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Siemens -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Graduate Trainee Engineer</h3>
+                <span class="timeline-period">Aug 2026 – Present</span>
+              </div>
+              <div class="timeline-company">
+                <span>Siemens Technology & Services Pvt. Ltd.</span>
+                <span>•</span>
+                <span>Chennai, India</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Contribute to the development and maintenance of <strong>SiPass</strong>, an enterprise-scale physical security and access-control platform.</li>
+                <li>Implement and debug features across multi-tier enterprise codebases using <strong>C#, Angular, and TypeScript</strong>.</li>
+                <li>Uphold enterprise software quality standards through peer code reviews, component debugging, and system integration.</li>
+                <li>Leverage <strong>agentic AI developer tools</strong> to accelerate codebase comprehension, dependency mapping, and modern refactoring workflows.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-pill">C#</span>
+                <span class="tag-pill">Angular</span>
+                <span class="tag-pill">TypeScript</span>
+                <span class="tag-pill">Enterprise Architecture</span>
+                <span class="tag-pill">SiPass</span>
+                <span class="tag-pill">Agentic AI Workflows</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scalefull Technologies -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Machine Learning Intern</h3>
+                <span class="timeline-period">Nov 2024 – Jan 2025</span>
+              </div>
+              <div class="timeline-company">
+                <span>Scalefull Technologies Pvt. Ltd.</span>
+                <span>•</span>
+                <span>Remote</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Architected a multi-stock deep learning model using <strong>LSTM networks in TensorFlow/Keras</strong> for time-series stock price forecasting.</li>
+                <li>Engineered technical indicator feature sets incorporating RSI, MACD, and Bollinger Bands with min-max scaling pipelines.</li>
+                <li>Achieved <strong>93% test accuracy</strong> on benchmark equity datasets including GOOGL and AMZN.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">TensorFlow</span>
+                <span class="tag-pill">Keras</span>
+                <span class="tag-pill">LSTM</span>
+                <span class="tag-pill">Time-Series</span>
+                <span class="tag-pill">Financial ML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Technical Skills Matrix
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-desc">A multidisciplinary stack spanning applied AI, computer vision, modern web frameworks, and enterprise software engineering.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">💻</div>
+              <h3 class="skill-cat-title">Languages</h3>
+            </div>
+            <div class="skill-items-wrap">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">C#</span>
+              <span class="skill-badge">TypeScript</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- AI & Data Science -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🧠</div>
+              <h3 class="skill-cat-title">AI & Data Science</h3>
+            </div>
+            <div class="skill-items-wrap">
+              <span class="skill-badge">TensorFlow</span>
+              <span class="skill-badge">PyTorch</span>
+              <span class="skill-badge">Keras</span>
+              <span class="skill-badge">OpenCV</span>
+              <span class="skill-badge">Sentence-Transformers</span>
+              <span class="skill-badge">Computer Vision</span>
+              <span class="skill-badge">NLP Semantic Scoring</span>
+              <span class="skill-badge">Scikit-Learn</span>
+              <span class="skill-badge">Pandas & NumPy</span>
+            </div>
+          </div>
+
+          <!-- Web & Backend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🌐</div>
+              <h3 class="skill-cat-title">Web & Backend</h3>
+            </div>
+            <div class="skill-items-wrap">
+              <span class="skill-badge">Angular</span>
+              <span class="skill-badge">Django</span>
+              <span class="skill-badge">Flask</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">HTML5 & CSS3</span>
+              <span class="skill-badge">Streamlit</span>
+            </div>
+          </div>
+
+          <!-- Developer Tools & Systems -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">⚙️</div>
+              <h3 class="skill-cat-title">Tools & Systems</h3>
+            </div>
+            <div class="skill-items-wrap">
+              <span class="skill-badge">Git & GitHub</span>
+              <span class="skill-badge">Agentic AI Tooling</span>
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">SQLite</span>
+              <span class="skill-badge">OOP & Clean Code</span>
+              <span class="skill-badge">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Featured Projects & Publications
+         ====================================================================== -->
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Flagship Work</span>
+          <h2 class="section-title">Featured Projects & Research</h2>
+          <p class="section-desc">Key systems developed in AI evaluation, medical imaging classification, and published research.</p>
+        </div>
+
+        <div class="featured-grid">
+          <!-- NeuroScan AI -->
+          <article class="project-card">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-type-tag">Deep Learning / Medical AI</span>
+              </div>
+              <h3 class="project-card-title">NeuroScan AI</h3>
+              <p class="project-card-desc">
+                An AI-powered diagnostic web system that classifies brain MRI scans to identify potential brain tumors using convolutional neural networks with real-time confidence distributions.
+              </p>
+              <div class="project-stats-highlight">
+                <span>🎯</span>
+                <span><strong>92.68%</strong> Validation Accuracy on Kaggle Datasets</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">TensorFlow/Keras</span>
+                <span class="tag-pill">CNN</span>
+                <span class="tag-pill">Streamlit</span>
+                <span class="tag-pill">Computer Vision</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DumboDhruvi/NeuroScan-AI" target="_blank" rel="noopener noreferrer" class="card-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Automated Answer Checker -->
+          <article class="project-card">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-type-tag">Applied AI & NLP</span>
+              </div>
+              <h3 class="project-card-title">Automated Answer Checker</h3>
+              <p class="project-card-desc">
+                An intelligent evaluation pipeline extracting handwritten student answers from PDF sheets via OCR and regex, utilizing Sentence-Transformers and cosine similarity for automated semantic rubric grading.
+              </p>
+              <div class="project-stats-highlight">
+                <span>⚡</span>
+                <span>Automated Handwritten Extraction & Semantic Rubrics</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">Sentence-Transformers</span>
+                <span class="tag-pill">OCR APIs</span>
+                <span class="tag-pill">Regex</span>
+                <span class="tag-pill">MySQL</span>
+                <span class="tag-pill">Streamlit</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DumboDhruvi/Automated-Answer-Checker" target="_blank" rel="noopener noreferrer" class="card-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Plant Disease Detection System Publication -->
+          <article class="project-card">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-type-tag">Research Publication</span>
+              </div>
+              <h3 class="project-card-title">Plant Disease Detection System</h3>
+              <p class="project-card-desc">
+                Co-authored published research evaluating custom convolutional neural network architectures for early agricultural crop disease classification with adaptive learning rates and tailored data augmentation.
+              </p>
+              <div class="project-stats-highlight">
+                <span>📚</span>
+                <span><strong>95.26%</strong> Classification Accuracy Achieved</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">CNN</span>
+                <span class="tag-pill">Keras</span>
+                <span class="tag-pill">Cross-Validation</span>
+                <span class="tag-pill">Image Processing</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <span class="card-link-btn" style="cursor: default;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span>Published Research</span>
+              </span>
+            </div>
+          </article>
+
+          <!-- EduReview -->
+          <article class="project-card">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-type-tag">Full-Stack Web Platform</span>
+              </div>
+              <h3 class="project-card-title">EduReview</h3>
+              <p class="project-card-desc">
+                A web-based platform tailored for students to discover, rate, and review online educational curricula with a primary focus on NPTEL coursework, including search filters and institution metrics.
+              </p>
+              <div class="project-stats-highlight">
+                <span>🎓</span>
+                <span>Course Review & Discovery for Engineering Curricula</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tag-pill">Django</span>
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">MySQL</span>
+                <span class="tag-pill">HTML/CSS/JS</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DumboDhruvi/EduReview" target="_blank" rel="noopener noreferrer" class="card-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Dynamic GitHub Repository Showcase
+         ====================================================================== -->
+    <section class="section github-showcase-section" id="github-showcase">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Live GitHub Sync</span>
+          <h2 class="section-title">All GitHub Repositories</h2>
+          <p class="section-desc">
+            Automatically loaded from my public GitHub repositories that contain a <code>README.md</code> overview. Repositories without documentation or listed in exclusions are automatically skipped.
+          </p>
+        </div>
+
+        <!-- Controls: Search, Filters, Refresh -->
+        <div class="gh-controls-bar">
+          <div class="gh-search-wrapper">
+            <span class="gh-search-icon">🔍</span>
+            <input type="text" id="gh-search-input" class="gh-search-input" placeholder="Search by project name, keywords, or README text..." aria-label="Search repositories">
+          </div>
+
+          <div class="gh-filter-chips">
+            <button class="gh-chip-btn active" data-filter="all">All</button>
+            <button class="gh-chip-btn" data-filter="python">Python</button>
+            <button class="gh-chip-btn" data-filter="ai-ml">AI & ML</button>
+            <button class="gh-chip-btn" data-filter="web">Web & Apps</button>
+          </div>
+
+          <button id="gh-refresh-btn" class="gh-refresh-btn" title="Force refresh repository feed from GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            <span>Refresh</span>
+          </button>
+        </div>
+
+        <!-- Live Status Bar -->
+        <div class="gh-status-indicator">
+          <div class="gh-live-badge" id="gh-live-status">
+            <span class="pulse-dot" style="background: #10b981;"></span>
+            <span>Live Sync Active</span>
+          </div>
+          <span id="gh-repo-count" style="font-family: var(--font-mono); font-size: 0.8rem;">Loading repositories...</span>
+        </div>
+
+        <!-- Repositories Grid Container -->
+        <div class="gh-repos-grid" id="github-repos-container">
+          <!-- Populated dynamically via js/github-repos.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Education & Achievements Section
+         ====================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="edu-achieve-grid">
+          <!-- Education -->
+          <div class="card-box">
+            <div class="card-box-header">
+              <div class="card-box-icon">🎓</div>
+              <h3 class="card-box-title">Education</h3>
+            </div>
+
+            <div class="edu-item">
+              <h4 class="edu-degree">B.E. in Artificial Intelligence & Data Science</h4>
+              <p class="edu-school">Ajeenkya DY Patil School of Engineering (under SPPU), Pune</p>
+              <div class="edu-meta">
+                <span>Graduated: 2026</span>
+                <span>•</span>
+                <span style="color: var(--accent-secondary); font-weight: 600;">CGPA: 8.44</span>
+              </div>
+            </div>
+
+            <div class="edu-item">
+              <h4 class="edu-degree">Higher Secondary Certificate (10th & 12th Grade)</h4>
+              <p class="edu-school">Holy Mission Sr. Sec. School, Muzaffarpur, Bihar</p>
+              <div class="edu-meta">
+                <span>Completed: May 2022</span>
+                <span>•</span>
+                <span>10th: 87% | 12th: 81%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievements & Honors -->
+          <div class="card-box">
+            <div class="card-box-header">
+              <div class="card-box-icon">🏆</div>
+              <h3 class="card-box-title">Honors & Achievements</h3>
+            </div>
+
+            <ul class="achieve-list">
+              <li class="achieve-list-item">
+                <div class="achieve-badge-icon">⚡</div>
+                <div class="achieve-content">
+                  <h4>GATE DSAI 2025 Qualified</h4>
+                  <p>Secured All India Rank <strong>6259</strong> in Data Science & Artificial Intelligence.</p>
+                </div>
+              </li>
+
+              <li class="achieve-list-item">
+                <div class="achieve-badge-icon">🥇</div>
+                <div class="achieve-content">
+                  <h4>Department Topper — First Year Engineering</h4>
+                  <p>Ranked 2nd among all engineering students in the AI & Data Science department.</p>
+                </div>
+              </li>
+
+              <li class="achieve-list-item">
+                <div class="achieve-badge-icon">📐</div>
+                <div class="achieve-content">
+                  <h4>Engineering Mathematics & Mechanics Subject Topper</h4>
+                  <p>Achieved top marks in department-wide core engineering fundamentals.</p>
+                </div>
+              </li>
+
+              <li class="achieve-list-item">
+                <div class="achieve-badge-icon">♟️</div>
+                <div class="achieve-content">
+                  <h4>2nd Place — Inter-College Chess Tournament</h4>
+                  <p>Secured runners-up in competitive inter-college chess championship.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Contact & Connect Section
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="contact-card-title">Get in Touch</h2>
+          <p class="contact-card-desc">
+            Whether you're looking to discuss AI/ML opportunities, enterprise systems engineering, or collaborative open-source projects, feel free to reach out.
+          </p>
+
+          <div class="contact-details-grid">
+            <div class="contact-item-box">
+              <div class="contact-item-icon">✉️</div>
+              <div class="contact-item-title">Email</div>
+              <div class="contact-item-val">dhruv01112004@gmail.com</div>
+            </div>
+
+            <div class="contact-item-box">
+              <div class="contact-item-icon">📱</div>
+              <div class="contact-item-title">Phone</div>
+              <div class="contact-item-val">+91 9153610767</div>
+            </div>
+
+            <div class="contact-item-box">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-title">Location</div>
+              <div class="contact-item-val">Chennai, Tamil Nadu, India</div>
+            </div>
+          </div>
+
+          <div class="contact-cta-buttons">
+            <a href="mailto:dhruv01112004@gmail.com" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Send Direct Email</span>
+            </a>
+            <button id="copy-email-btn" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Email Address</span>
+            </button>
+            <a href="assets/Dhruv_Kumar_Resume.pdf" target="_blank" class="btn btn-secondary" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="https://github.com/DumboDhruvi" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com/in/dhruvkumar2004" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://leetcode.com/u/DumboDhruvi/" target="_blank" rel="noopener noreferrer" class="footer-link">LeetCode</a>
+        <a href="https://x.com/DumboDhruvi" target="_blank" rel="noopener noreferrer" class="footer-link">X (Twitter)</a>
+        <a href="assets/Dhruv_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="footer-link">Resume</a>
+      </div>
+      <p>© 2026 Dhruv Kumar. Crafted with modern web standards and responsive typography.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/github-repos.js"></script>
+</body>
+</html>

@@ -1,74 +1,76 @@
-# Dhruv Kumar's Portfolio Website
+# Dhruv Kumar — Personal Portfolio & Showcase
 
-This repository hosts my personal portfolio website, created with Jekyll. The website showcases my projects, blog posts, and professional background. 
+A modern, responsive personal portfolio website for **Dhruv Kumar**, Graduate Trainee Engineer at Siemens, specializing in Applied AI, Computer Vision, and Enterprise Software Systems.
 
-## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [Customization](#customization)
-- [Site Structure](#site-structure)
-- [Deployment](#deployment)
+Live site: [dumbodhruvi.github.io](https://dumbodhruvi.github.io)
 
 ---
 
-## About
-This portfolio website is a Jekyll-based static site. It is designed to present my projects and blogs in an organized, visually appealing way. The homepage provides an introduction, with links to my detailed projects and a blog site. The purpose of this site is to showcase my skills in AI and Data Science and share my blog posts on related topics.
+## Highlights & Features
 
-## Features
-- **Home Page**: Introduction with navigation to Projects and Blog sections.
-- **Projects Page**: Dedicated section listing all my projects with detailed descriptions.
-- **Blog**: Section for sharing blog posts and insights.
-- **Customizable Navigation**: Easily update links in the navigation bar.
-- **Responsive Design**: Optimized for mobile and desktop viewing.
+- **Enterprise & Professional Background**: Highlights career experience at **Siemens Technology & Services** (SiPass, C#, Angular, TypeScript, agentic AI workflows) and **Scalefull Technologies** (LSTM financial ML).
+- **Academic & Research Honors**: Features B.E. in AI & Data Science (CGPA 8.44), GATE DSAI 2025 (AIR 6259), published plant disease CNN research (95.26% accuracy), and LeetCode peak contest rating of 1649 (Top 16%).
+- **⚡ Dynamic GitHub Showcase with Live README Extraction**:
+  - Automatically fetches all public repositories via the GitHub REST API.
+  - Queries `README.md` for each repository to extract a clean, human-readable summary excerpt.
+  - Automatically **skips** repositories that do not have a `README.md`.
+  - Configurable `EXCLUDED_REPOS` blacklist so internal or unwanted repos never appear.
+  - Client-side `localStorage` caching (1 hour) with manual "Refresh" button and resilient fallback data if rate limits are reached.
+  - Real-time client-side search and category filtering (Python, AI & ML, Web & Apps).
+- **Modern UI & Responsive Design**:
+  - Obsidian dark mode default with light mode toggle (persisted across visits).
+  - Glassmorphic navigation bar with scroll blur and active section spy.
+  - Direct bundled resume download (`assets/Dhruv_Kumar_Resume.pdf`).
+  - Interactive copy-to-clipboard email action with toast notification.
+  - 100% pure static web (HTML5, CSS3, ES6+ JS) — zero build steps or Ruby/Jekyll dependencies required.
 
-## Installation
-To set up this website locally, you need to have **Ruby** and **Jekyll** installed.
+---
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/DumboDhruvi/portfolio-website.git
-    cd portfolio-website
-    ```
+## Project Structure
 
-2. **Install dependencies**:
-    Install the required Ruby gems:
-    ```bash
-    bundle install
-    ```
+```
+├── .nojekyll                 # Ensures GitHub Pages serves static files directly
+├── assets/
+│   ├── avatar.jpg            # Square avatar
+│   ├── profile.jpg           # Profile photo
+│   └── Dhruv_Kumar_Resume.pdf# Bundled latest resume PDF
+├── css/
+│   └── style.css             # Obsidian Slate design system & responsive styling
+├── js/
+│   ├── app.js                # Core interactions: theme switcher, mobile menu, toast
+│   └── github-repos.js       # Dynamic GitHub repo sync & README markdown parser
+├── img/                      # Legacy and auxiliary images
+├── index.html                # Main portfolio single-page application
+└── README.md
+```
 
-3. **Serve the website**:
-    Run Jekyll to serve the website locally:
-    ```bash
-    bundle exec jekyll serve
-    ```
-    Visit `http://localhost:4000` in your browser to view the site.
+---
 
-## Customization
-Most site configurations can be adjusted in the `_config.yml` file. Here are some common options you may want to update:
+## How to Configure Excluded Repositories
 
-- **Site Settings**: Set your name, email, and descriptions.
-- **Social Links**: Update your Twitter, GitHub, and LinkedIn handles.
-- **Navigation**: Adjust `nav_item` links in `_config.yml` for the pages you want in the header.
+To hide any repository from showing up on the portfolio website:
+Open `js/github-repos.js` and add the repository name to `EXCLUDED_REPOS`:
 
-## Site Structure
-The site has a simple structure:
+```javascript
+const EXCLUDED_REPOS = [
+  'DumboDhruvi',
+  'DumboDhruvi.github.io',
+  'portfolio',
+  'sturdy-winner',
+  'cn',
+  'polynomial',
+  'your-repo-to-hide' // <--- add any repo name here
+];
+```
 
-- **Homepage**: `index.html` - Contains an introduction and links to Projects and Blog.
-- **Projects**: `projects/` - Lists all the projects with individual project details.
-- **Blog**: `_posts/` - Contains individual blog post markdown files.
-- **Config File**: `_config.yml` - Main configuration file where site-wide settings can be adjusted.
-  
-## Deployment
-1. **GitHub Pages**: If you plan to deploy on GitHub Pages, push the code to the `main` branch of your GitHub repository and make sure GitHub Pages is enabled in your repository settings.
-2. **Other Hosting Services**: Alternatively, you can deploy the `_site` folder to any static site hosting provider, such as Netlify or Vercel.
+---
 
-## Contributing
-Feel free to fork this repository, make improvements, and submit pull requests if you'd like to contribute. Any suggestions to improve functionality or design are welcome!
+## Local Development
 
-## License
-This project is open-source and available under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Run any static HTTP server from the root of this repository:
 
-## Contact
-For any questions or feedback, reach me at `dhruv01112004@gmail.com`.
+```bash
+python3 -m http.server 8080
+```
 
+Then navigate to `http://localhost:8080` in your web browser.
