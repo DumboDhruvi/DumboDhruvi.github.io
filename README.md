@@ -8,7 +8,7 @@ Live site: [dumbodhruvi.github.io](https://dumbodhruvi.github.io)
 
 ## Highlights & Features
 
-- **Enterprise & Professional Background**: Highlights career experience at **Siemens Technology & Services** (SiPass, C#, Angular, TypeScript, agentic AI workflows) and **Scalefull Technologies** (LSTM financial ML).
+- **Enterprise & Professional Background**: Highlights career experience at **Siemens Technology & Services** (enterprise physical access-control systems, C#, Angular, TypeScript, agentic AI workflows) and **Scalefull Technologies** (LSTM financial ML).
 - **Academic & Research Honors**: Features B.E. in AI & Data Science (CGPA 8.44), GATE DSAI 2025 (AIR 6259), published plant disease CNN research (95.26% accuracy), and LeetCode peak contest rating of 1649 (Top 16%).
 - **⚡ Dynamic GitHub Showcase with Live README Extraction**:
   - Automatically fetches all public repositories via the GitHub REST API.
